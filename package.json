@@ -1,0 +1,22 @@
+{
+  "name": "@slydragonn/classyjs",
+  "version": "1.0.0",
+  "description": "Framework Frontend based on OOP and Atomic design",
+  "main": "dist/classyjs.umd.js",
+  "module": "dist/classyjs.es.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "create-classyjs-app": "./src/scripts/create-app.cjs"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "slydragonn",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.3.3"
+  }
+}
