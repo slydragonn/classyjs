@@ -45,7 +45,13 @@ mountIsland(root, atom)
 Remove Atom:
 
 ```js
-removeAtom(atom)
+import { Span } from "@slydragonn/classyjs"
+
+const hello = new Span({
+  children: "Hello World!"
+})
+
+hello.remove()
 ```
 
 ### Atoms:
