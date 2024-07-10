@@ -13,7 +13,7 @@ function cloneRepo(repoUrl, projectName) {
     if (stderr) {
       console.log(`Git message: ${stderr}`);
     }
-    console.log(`Repo OK: ${localPath}`);
+    console.log(`Repo OK: ${projectName}`);
     console.log(stdout);
   });
 }
@@ -26,7 +26,7 @@ if (args.length < 1) {
 } else if (args[0] === "--help") {
   console.log("Use: npx create-classyjs-app <your-project-name>");
 } else {
-  const repoUrl = "";
+  const repoUrl = "https://github.com/slydragonn/classyjs-app.git";
   const localPath = args[0];
 
   cloneRepo(repoUrl, localPath);
