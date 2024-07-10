@@ -48,4 +48,12 @@ export default class Atom {
       return this.lifeCycle.mount;
     }
   }
+  remove() {
+    const atom = this.parent.querySelector(`[data-key="${this.atom.key}"]`);
+    atom.remove();
+    if (this.lifeCycle?.unmount) {
+      return this.lifeCycle.unmount();
+    }
+    return;
+  }
 }
